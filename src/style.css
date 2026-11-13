@@ -794,3 +794,33 @@ a:hover{color:#fff}
  header nav button{color:#f5f1f3!important}
  .filters .search-box{background:#222126!important}
 }
+
+
+/* Mobile navigation and transient feedback refinement */
+@media(max-width:760px){
+ header.site-header nav{
+  display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;
+  overflow-y:hidden!important;white-space:nowrap!important;overscroll-behavior-x:contain;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;
+  padding:5px 14px 9px 0!important;gap:12px!important;
+ }
+ header.site-header nav::-webkit-scrollbar{display:none}
+ header.site-header nav button{
+  flex:0 0 auto!important;min-height:42px;font-size:12px!important;
+  padding:10px 13px!important;white-space:nowrap;
+ }
+ header.site-header nav button.chosen{font-weight:700}
+ .notice{
+  bottom:calc(14px + env(safe-area-inset-bottom))!important;
+  left:14px!important;right:14px!important;width:auto!important;
+  max-width:none!important;padding:13px 15px!important;
+  font-size:12px!important;line-height:1.5!important;
+ }
+}
+@media(max-width:380px){
+ header.site-header{column-gap:8px}
+ header.site-header .logo{gap:8px}
+ header.site-header .logo b{width:54px;height:54px;display:grid;place-items:center;padding:0}
+ header.site-header .logo span{font-size:11px}
+ header.site-header .header-account button{font-size:9px;padding:7px 8px}
+}
