@@ -302,3 +302,60 @@ footer{background:linear-gradient(110deg,#211a1a,#302121);border-top:3px solid #
  .filters{padding:8px}
  .detail-aside{box-shadow:0 8px 20px rgba(33,26,26,.09)}
 }
+
+
+/* Olive Minimal — Light theme */
+:root{--ink:#29352C;--muted:#68735F;--olive:#68735F;--olive-dark:#29352C;--olive-soft:#A8AA91;--line:#E8E8DE;--paper:#FAFAF6;--surface:#FFFFFF}
+html,body{background:#FAFAF6;color:#29352C}
+body{font-family:'DM Sans',sans-serif}
+header{background:#FAFAF6;backdrop-filter:none;box-shadow:none;border-bottom:1px solid #E8E8DE}
+.logo b{background:#29352C;color:#FAFAF6;box-shadow:none}
+.logo:hover b{transform:none}
+nav button:hover,header>button:hover{color:#68735F}
+nav .chosen{color:#29352C;border-bottom-color:#68735F}
+header nav button{border-radius:2px}
+.hero{background:#29352C!important;background-image:none!important;color:#FAFAF6}
+.hero:after{display:none}
+.hero h1{text-shadow:none}
+.hero .primary,.primary{background:#68735F;color:#fff;box-shadow:none;border:1px solid #68735F;border-radius:2px}
+.hero .primary:hover,.primary:hover{background:#29352C;box-shadow:none;transform:none}
+.seal{box-shadow:none;border:1px solid rgba(250,250,246,.35)}
+.intro{background:#FAFAF6}
+.intro h2,.listing h1,.detail-heading h1{color:#29352C}
+.tiles{gap:12px}
+.tiles button{background:#fff;border:1px solid #E8E8DE;box-shadow:none;border-radius:2px;transition:border-color .18s ease}
+.tiles button:after{display:none}
+.tiles button:hover{transform:none;box-shadow:none;border-color:#A8AA91}
+.tiles button>svg{color:#68735F}
+.listing{background:#FAFAF6}
+.filters{background:#fff;border:1px solid #E8E8DE;border-radius:2px}
+.filters .search-box,.filters select{background:#fff;border:1px solid #E8E8DE;box-shadow:none;border-radius:2px}
+.filters .search-box:focus-within,.filters select:focus{border-color:#68735F;box-shadow:0 0 0 2px rgba(104,115,95,.12)}
+.filters .reset-filters:hover{background:#29352C;color:#fff}
+.cards article{background:#fff;border:1px solid #E8E8DE;box-shadow:none;border-radius:2px;transition:border-color .18s ease}
+.cards article:hover{transform:none;box-shadow:none;border-color:#A8AA91}
+.cards .embed{background:#E8E8DE}
+.cards .embed iframe{transition:none}
+.cards article>small,.detail-heading>small,.detail-section>small{color:#68735F}
+.detail-open,.documentation-link,.back-link{color:#52634C}
+.detail-open:hover{color:#29352C}
+.detail-section{background:#fff;border:1px solid #E8E8DE;box-shadow:none;border-radius:2px}
+.detail-aside{background:#29352C;box-shadow:none;border-radius:2px}
+.category-manager,.backup-panel{background:#fff;border:1px solid #E8E8DE;box-shadow:none;border-radius:2px}
+.category-form input,.category-form input:focus,.dialog input,.dialog select,.dialog textarea{border-radius:2px}
+.category-row:hover{background:#FAFAF6}
+.stats-panel{background:#29352C;box-shadow:none;border-radius:2px}
+.stat-card,.stats-breakdown>div{background:transparent;border:1px solid rgba(250,250,246,.2);border-radius:2px}
+.backup-summary>div{background:#FAFAF6;border:1px solid #E8E8DE}
+.backup-note{background:#F2F3ED;color:#52634C}
+footer{background:#29352C;border-top:1px solid #68735F}
+.dialog{box-shadow:0 12px 40px rgba(41,53,44,.12);border:1px solid #E8E8DE;border-radius:3px}
+.notice{box-shadow:0 8px 24px rgba(41,53,44,.12);border-left:3px solid #68735F}
+button,a,input,select,textarea{accent-color:#68735F}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:#68735F}
+@media(max-width:800px){
+ header nav button{background:#fff;border:1px solid #E8E8DE;border-radius:2px}
+ header nav .chosen{background:#29352C;color:#fff;border-color:#29352C;box-shadow:none}
+ .hero{background:#29352C!important}
+ .tiles button:hover,.cards article:hover{transform:none}
+}
