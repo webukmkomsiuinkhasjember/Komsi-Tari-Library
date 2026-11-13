@@ -824,3 +824,9 @@ a:hover{color:#fff}
  header.site-header .logo span{font-size:11px}
  header.site-header .header-account button{font-size:9px;padding:7px 8px}
 }
+
+/* Logo resmi KOMSI di pojok kiri header */
+.site-header .logo{display:flex;align-items:center;gap:0;flex:0 0 auto;min-width:0}
+.site-header .logo img{display:block;width:76px;height:76px;object-fit:contain;border-radius:8px}
+@media(max-width:900px){.site-header .logo img{width:64px;height:64px}}
+@media(max-width:600px){.site-header .logo img{width:58px;height:58px}}
