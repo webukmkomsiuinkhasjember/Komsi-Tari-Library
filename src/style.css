@@ -55,3 +55,24 @@
 .empty-detail{background:white;padding:35px;border:1px solid #e8e1da}
 .empty-detail h2{font:700 24px Manrope}
 @media(max-width:800px){.detail-page{padding:38px 7vw 65px}.detail-layout{grid-template-columns:1fr;gap:16px}.detail-aside{position:static}.detail-section{padding:19px}.detail-heading h1{font-size:36px}}
+
+
+/* Backup and maintenance */
+.backup-panel{background:#fff;border:1px solid #e8e1da;padding:25px;margin:24px 0}
+.backup-title{display:flex;justify-content:space-between;align-items:flex-start;gap:18px}
+.backup-title small{font-size:9px;letter-spacing:.17em;color:#9c6763;font-weight:700}
+.backup-title h2{font:700 24px Manrope;margin:8px 0}
+.backup-title p{font-size:12px;color:#817770;line-height:1.7;margin:0;max-width:570px}
+.backup-title .primary{margin:0;white-space:nowrap}
+.backup-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0}
+.backup-summary>div{background:#f5f0eb;border:1px solid #e8e1da;padding:16px;display:flex;flex-direction:column;gap:5px}
+.backup-summary b{font:700 25px Manrope;color:#302624}
+.backup-summary span{font-size:10px;color:#817770}
+.backup-status{padding:12px;background:#f5f0eb;border-left:3px solid #7b2630;font-size:11px;line-height:1.6;overflow-wrap:anywhere}
+.maintenance-steps{border-top:1px solid #eee7e0;padding-top:18px}
+.maintenance-steps h3{font:700 17px Manrope;margin:0 0 12px}
+.maintenance-steps ol{padding-left:20px;margin:0}
+.maintenance-steps li{font-size:11px;line-height:1.8;color:#766d67;margin:8px 0}
+.maintenance-steps li b{color:#342927}
+.backup-note{font-size:10px;line-height:1.7;color:#8a5c55;background:#fbf6f1;padding:12px;margin:16px 0 0}
+@media(max-width:700px){.backup-panel{padding:17px}.backup-title{flex-direction:column}.backup-title .primary{width:100%;justify-content:center}.backup-summary{grid-template-columns:1fr 1fr}.backup-summary>div:last-child{grid-column:1/-1}}
