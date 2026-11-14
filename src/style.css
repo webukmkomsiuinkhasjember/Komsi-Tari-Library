@@ -830,3 +830,40 @@ a:hover{color:#fff}
 .site-header .logo img{display:block;width:76px;height:76px;object-fit:contain;border-radius:8px}
 @media(max-width:900px){.site-header .logo img{width:64px;height:64px}}
 @media(max-width:600px){.site-header .logo img{width:58px;height:58px}}
+
+/* Dokumentasi foto carousel dan uploader */
+.photo-carousel{position:relative;width:100%;aspect-ratio:16/9;background:#171519;overflow:hidden;border-radius:13px 13px 0 0}
+.photo-main{display:block;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
+.photo-main img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s ease}
+.photo-main:hover img{transform:scale(1.025)}
+.photo-expand{position:absolute;right:12px;top:12px;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#111c;color:#fff}
+.photo-arrow{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border:1px solid #ffffff55;border-radius:50%;display:grid;place-items:center;background:#111c;color:#fff;cursor:pointer;z-index:2}
+.photo-prev{left:10px}.photo-next{right:10px}
+.photo-count{position:absolute;right:12px;bottom:12px;padding:5px 9px;border-radius:20px;background:#111d;color:#fff;font-size:12px;font-weight:600}
+.photo-dots{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:flex;gap:5px;z-index:2}
+.photo-dots button{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:#ffffff88;cursor:pointer}
+.photo-dots button.active{background:#fff;width:18px;border-radius:8px}
+.photo-lightbox{position:fixed;inset:0;z-index:10000;background:#08070af2;display:flex;align-items:center;justify-content:center;padding:48px 64px}
+.photo-lightbox img{max-width:min(100%,1200px);max-height:85vh;object-fit:contain}
+.photo-lightbox>span{position:absolute;bottom:18px;color:#fff;font-size:13px}
+.photo-lightbox-close,.photo-lightbox-arrow{position:absolute;z-index:2;border:1px solid #ffffff44;background:#242128;color:#fff;border-radius:50%;width:42px;height:42px;display:grid;place-items:center;cursor:pointer}
+.photo-lightbox-close{top:18px;right:18px}.photo-lightbox-arrow.left{left:16px;top:50%}.photo-lightbox-arrow.right{right:16px;top:50%}
+.gallery-upload{display:flex;flex-direction:column;gap:12px;padding:15px;border:1px solid var(--border,#46414a);border-radius:14px;background:#171519}
+.gallery-upload-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.gallery-upload-heading>div{display:flex;flex-direction:column;gap:4px}
+.gallery-upload-heading small,.gallery-empty{color:#bcb6c2;font-size:12px}
+.gallery-upload-heading>span{font-size:12px;font-weight:700;color:#fff;background:#343039;padding:5px 9px;border-radius:20px}
+.gallery-file-picker{position:relative;display:flex;justify-content:center;align-items:center;min-height:54px;border:1px dashed #a34a62;border-radius:10px;background:#24171d;color:#fff;cursor:pointer}
+.gallery-file-picker input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.gallery-file-picker input:disabled{cursor:not-allowed}
+.gallery-file-picker span{display:flex;align-items:center;gap:8px;font-weight:650}
+.gallery-queue{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.gallery-queue-item{min-width:0;display:flex;flex-direction:column;gap:6px}
+.gallery-queue-item img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:9px;background:#29252d}
+.gallery-queue-item>span{font-size:11px;color:#d7d2dc}
+.gallery-queue-item>div{display:flex;gap:4px}
+.gallery-queue-item button{flex:1;min-width:0;padding:6px 2px;border:1px solid #4b4550;border-radius:6px;background:#29252d;color:#fff;display:grid;place-items:center}
+.gallery-queue-item button:disabled{opacity:.35}
+.gallery-queue-item button.remove-photo{color:#ff8b9c}
+.gallery-empty{margin:0;text-align:center;padding:8px}
+@media(max-width:600px){.gallery-queue{grid-template-columns:repeat(3,minmax(0,1fr))}.photo-lightbox{padding:50px 12px}.photo-lightbox-arrow.left{left:6px}.photo-lightbox-arrow.right{right:6px}.photo-arrow{width:32px;height:32px}}
