@@ -867,3 +867,12 @@ a:hover{color:#fff}
 .gallery-queue-item button.remove-photo{color:#ff8b9c}
 .gallery-empty{margin:0;text-align:center;padding:8px}
 @media(max-width:600px){.gallery-queue{grid-template-columns:repeat(3,minmax(0,1fr))}.photo-lightbox{padding:50px 12px}.photo-lightbox-arrow.left{left:6px}.photo-lightbox-arrow.right{right:6px}.photo-arrow{width:32px;height:32px}}
+
+/* Live upload progress */
+.upload-progress{display:flex;flex-direction:column;gap:8px;padding:12px 13px;border:1px solid #60404a;border-radius:10px;background:#21181e}
+.upload-progress-label{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#fff;font-size:12px}
+.upload-progress-label span{font-weight:750;font-variant-numeric:tabular-nums;color:#ff9aad}
+.upload-progress-track{height:9px;overflow:hidden;border-radius:20px;background:#393039;border:1px solid #51404a}
+.upload-progress-track span{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,#a91c38,#f06a83);transition:width .15s ease}
+.upload-progress>small{color:#d1c6cb;font-size:10px;overflow-wrap:anywhere}
+.upload-progress[role=status]{aria-live:polite}
